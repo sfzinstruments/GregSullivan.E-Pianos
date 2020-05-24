@@ -1,0 +1,143 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Yamaha CP80 Electric Grand Piano
+// Greg Sullivan
+// --------------------------------------
+// converted by kinwie
+// --------------------------------------
+
+
+//midi cc
+#define $RELEASE 72
+#define $VELTRACK 99
+
+//file extension
+#define $EXT flac
+
+
+/////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$RELEASE=Release ($RELEASE)
+label_cc$VELTRACK=Veltrack ($VELTRACK)
+
+set_hdcc$RELEASE=0.05
+set_hdcc$VELTRACK=1
+
+
+//*******************************************************
+<global>
+ampeg_attack=0.001
+ampeg_hold=10
+ampeg_holdcc133=-9
+ampeg_decay=40
+ampeg_decaycc133=-35
+ampeg_sustain=0
+ampeg_release_oncc$RELEASE=2
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+
+//--------------------------------------------------------
+
+<group>
+lovel=1
+hivel=49
+group_label=PP
+<region> region_label=01 lokey=021 hikey=030 pitch_keycenter=027 volume=-2 sample=027-D#1-PP.$EXT
+<region> region_label=02 lokey=031 hikey=037 pitch_keycenter=034 volume=-3 sample=034-A#1-PP.$EXT
+<region> region_label=03 lokey=038 hikey=045 pitch_keycenter=042 volume=-4 sample=042-F#2-PP.$EXT
+<region> region_label=04 lokey=046 hikey=053 pitch_keycenter=050 volume=-6 sample=050-D3-PP.$EXT
+<region> region_label=05 lokey=054 hikey=059 pitch_keycenter=057 volume=-6 sample=057-A3-PP.$EXT
+<region> region_label=06 lokey=060 hikey=063 pitch_keycenter=063 volume=-6 sample=063-D#4-PP.$EXT
+<region> region_label=07 lokey=064 hikey=066 pitch_keycenter=065 volume=-6 sample=065-F4-PP.$EXT
+<region> region_label=08 lokey=067 hikey=069 pitch_keycenter=068 volume=-6 sample=068-G#4-PP.$EXT
+<region> region_label=09 lokey=070 hikey=075 pitch_keycenter=072 volume=-6 sample=072-C5-PP.$EXT
+<region> region_label=10 lokey=076 hikey=082 pitch_keycenter=080 volume=-6 sample=080-G#5-PP.$EXT
+<region> region_label=11 lokey=083 hikey=087 pitch_keycenter=085 volume=-6 sample=085-C#6-PP.$EXT
+<region> region_label=12 lokey=088 hikey=093 pitch_keycenter=091 volume=-6 sample=091-G6-PP.$EXT
+<region> region_label=13 lokey=094 hikey=099 pitch_keycenter=097 volume=-6 sample=097-C#7-PP.$EXT
+<region> region_label=14 lokey=100 hikey=104 pitch_keycenter=102 volume=-6 sample=102-F#7-PP.$EXT end=109256
+<region> region_label=15 lokey=105 hikey=108 pitch_keycenter=107 volume=-6 sample=107-B7-PP.$EXT end=102347
+
+<group>
+lovel=50
+hivel=81
+group_label=MP
+<region> region_label=01 lokey=021 hikey=030 pitch_keycenter=027 volume=-2 sample=027-D#1-MP.$EXT
+<region> region_label=02 lokey=031 hikey=037 pitch_keycenter=034 volume=-3 sample=034-A#1-MP.$EXT
+<region> region_label=03 lokey=038 hikey=043 pitch_keycenter=042 volume=-3 sample=042-F#2-MP.$EXT
+<region> region_label=04 lokey=044 hikey=047 pitch_keycenter=046 volume=-4 sample=046-A#2-MP.$EXT
+<region> region_label=05 lokey=048 hikey=051 pitch_keycenter=050 volume=-6 sample=050-D3-MP.$EXT
+<region> region_label=06 lokey=052 hikey=054 pitch_keycenter=053 volume=-4 sample=053-F3-MP.$EXT
+<region> region_label=07 lokey=055 hikey=058 pitch_keycenter=057 volume=-6 sample=057-A3-MP.$EXT
+<region> region_label=08 lokey=059 hikey=061 pitch_keycenter=060 volume=-6 sample=060-C4-MP.$EXT
+<region> region_label=09 lokey=062 hikey=063 pitch_keycenter=063 volume=-6 sample=063-D#4-MP.$EXT
+<region> region_label=10 lokey=064 hikey=066 pitch_keycenter=065 volume=-6 sample=065-F4-MP.$EXT
+<region> region_label=11 lokey=067 hikey=069 pitch_keycenter=068 volume=-6 sample=068-G#4-MP.$EXT
+<region> region_label=12 lokey=070 hikey=073 pitch_keycenter=072 volume=-6 sample=072-C5-MP.$EXT
+<region> region_label=13 lokey=074 hikey=077 pitch_keycenter=076 volume=-4 sample=076-E5-MP.$EXT
+<region> region_label=14 lokey=078 hikey=080 pitch_keycenter=080 volume=-3 sample=080-G#5-MP.$EXT
+<region> region_label=15 lokey=081 hikey=083 pitch_keycenter=082 volume=-3 sample=082-A#5-MP.$EXT
+<region> region_label=16 lokey=084 hikey=086 pitch_keycenter=085 volume=-4 sample=085-C#6-MP.$EXT
+<region> region_label=17 lokey=087 hikey=089 pitch_keycenter=088 volume=-4 sample=088-E6-MP.$EXT
+<region> region_label=18 lokey=090 hikey=092 pitch_keycenter=091 volume=-5 sample=091-G6-MP.$EXT
+<region> region_label=19 lokey=093 hikey=095 pitch_keycenter=095 volume=-5 sample=095-B6-MP.$EXT
+<region> region_label=20 lokey=096 hikey=099 pitch_keycenter=097 volume=-5 sample=097-C#7-MP.$EXT
+<region> region_label=21 lokey=100 hikey=104 pitch_keycenter=102 volume=-7 sample=102-F#7-MP.$EXT
+<region> region_label=22 lokey=105 hikey=108 pitch_keycenter=107 volume=-5 sample=107-B7-MP.$EXT
+
+<group>
+lovel=82
+hivel=103
+group_label=F
+<region> region_label=01 lokey=021 hikey=030 pitch_keycenter=027 volume=-2 sample=027-D#1-F.$EXT
+<region> region_label=02 lokey=031 hikey=038 pitch_keycenter=035 volume=-3 sample=035-B1-F.$EXT
+<region> region_label=03 lokey=039 hikey=043 pitch_keycenter=042 volume=-3 sample=042-F#2-F.$EXT
+<region> region_label=04 lokey=044 hikey=047 pitch_keycenter=046 volume=-4 sample=046-A#2-F.$EXT
+<region> region_label=05 lokey=048 hikey=051 pitch_keycenter=050 volume=-6 sample=050-D3-F.$EXT
+<region> region_label=06 lokey=052 hikey=054 pitch_keycenter=053 volume=-4 sample=053-F3-F.$EXT
+<region> region_label=07 lokey=055 hikey=058 pitch_keycenter=057 volume=-6 sample=057-A3-F.$EXT
+<region> region_label=08 lokey=059 hikey=061 pitch_keycenter=060 volume=-6 sample=060-C4-F.$EXT
+<region> region_label=09 lokey=062 hikey=063 pitch_keycenter=063 volume=-6 sample=063-D#4-F.$EXT
+<region> region_label=10 lokey=064 hikey=066 pitch_keycenter=065 volume=-6 sample=065-F4-F.$EXT
+<region> region_label=11 lokey=067 hikey=069 pitch_keycenter=068 volume=-6 sample=068-G#4-F.$EXT
+<region> region_label=12 lokey=070 hikey=073 pitch_keycenter=072 volume=-6 sample=072-C5-F.$EXT
+<region> region_label=13 lokey=074 hikey=077 pitch_keycenter=076 volume=-4 sample=076-E5-F.$EXT
+<region> region_label=14 lokey=078 hikey=080 pitch_keycenter=080 volume=-3 sample=080-G#5-F.$EXT
+<region> region_label=15 lokey=081 hikey=083 pitch_keycenter=082 volume=-3 sample=082-A#5-F.$EXT
+<region> region_label=16 lokey=084 hikey=086 pitch_keycenter=085 volume=-4 sample=085-C#6-F.$EXT
+<region> region_label=17 lokey=087 hikey=089 pitch_keycenter=088 volume=-4 sample=088-E6-F.$EXT
+<region> region_label=18 lokey=090 hikey=092 pitch_keycenter=091 volume=-5 sample=091-G6-F.$EXT
+<region> region_label=19 lokey=093 hikey=095 pitch_keycenter=095 volume=-5 sample=095-B6-F.$EXT
+<region> region_label=20 lokey=096 hikey=099 pitch_keycenter=097 volume=-5 sample=097-C#7-F.$EXT
+<region> region_label=21 lokey=100 hikey=104 pitch_keycenter=102 volume=-7 sample=102-F#7-F.$EXT
+<region> region_label=22 lokey=105 hikey=108 pitch_keycenter=107 volume=-5 sample=107-B7-F.$EXT
+
+<group>
+lovel=104
+hivel=127
+group_label=FF
+<region> region_label=01 lokey=021 hikey=030 pitch_keycenter=027 volume=-2 sample=027-D#1-FF.$EXT
+<region> region_label=02 lokey=031 hikey=038 pitch_keycenter=035 volume=-3 sample=035-B1-FF.$EXT
+<region> region_label=03 lokey=039 hikey=043 pitch_keycenter=042 volume=-3 sample=042-F#2-FF.$EXT
+<region> region_label=04 lokey=044 hikey=047 pitch_keycenter=046 volume=-4 sample=046-A#2-FF.$EXT
+<region> region_label=05 lokey=048 hikey=051 pitch_keycenter=050 volume=-6 sample=050-D3-FF.$EXT
+<region> region_label=06 lokey=052 hikey=054 pitch_keycenter=053 volume=-4 sample=053-F3-FF.$EXT
+<region> region_label=07 lokey=055 hikey=058 pitch_keycenter=057 volume=-6 sample=057-A3-FF.$EXT
+<region> region_label=08 lokey=059 hikey=061 pitch_keycenter=060 volume=-6 sample=060-C4-FF.$EXT
+<region> region_label=09 lokey=062 hikey=063 pitch_keycenter=063 volume=-6 sample=063-D#4-FF.$EXT
+<region> region_label=10 lokey=064 hikey=066 pitch_keycenter=065 volume=-6 sample=065-F4-FF.$EXT
+<region> region_label=11 lokey=067 hikey=069 pitch_keycenter=068 volume=-6 sample=068-G#4-FF.$EXT
+<region> region_label=12 lokey=070 hikey=073 pitch_keycenter=072 volume=-6 sample=072-C5-FF.$EXT
+<region> region_label=13 lokey=074 hikey=077 pitch_keycenter=076 volume=-4 sample=076-E5-FF.$EXT
+<region> region_label=14 lokey=078 hikey=080 pitch_keycenter=080 volume=-3 sample=080-G#5-FF.$EXT
+<region> region_label=15 lokey=081 hikey=083 pitch_keycenter=082 volume=-3 sample=082-A#5-FF.$EXT
+<region> region_label=16 lokey=084 hikey=086 pitch_keycenter=085 volume=-4 sample=085-C#6-FF.$EXT
+<region> region_label=17 lokey=087 hikey=089 pitch_keycenter=088 volume=-4 sample=088-E6-FF.$EXT
+<region> region_label=18 lokey=090 hikey=092 pitch_keycenter=091 volume=-5 sample=091-G6-FF.$EXT
+<region> region_label=19 lokey=093 hikey=095 pitch_keycenter=095 volume=-5 sample=095-B6-FF.$EXT
+<region> region_label=20 lokey=096 hikey=099 pitch_keycenter=097 volume=-5 sample=097-C#7-FF.$EXT
+<region> region_label=21 lokey=100 hikey=104 pitch_keycenter=102 volume=-7 sample=102-F#7-FF.$EXT
+<region> region_label=22 lokey=105 hikey=108 pitch_keycenter=107 volume=-5 sample=107-B7-FF.$EXT

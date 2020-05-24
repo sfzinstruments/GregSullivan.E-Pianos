@@ -1,0 +1,109 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Hohner Pianet T (type 2)
+// Greg Sullivan
+// --------------------------------------
+// converted by kinwie
+// --------------------------------------
+
+
+//midi cc
+#define $RELEASE 72
+#define $VELTRACK 99
+
+//file extension
+#define $EXT flac
+
+
+/////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$RELEASE=Release ($RELEASE)
+label_cc$VELTRACK=Veltrack ($VELTRACK)
+
+set_hdcc$RELEASE=0.05
+set_hdcc$VELTRACK=1
+
+
+//*******************************************************
+<global>
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+
+
+//==================================
+<master>
+ampeg_release_oncc$RELEASE=2
+group_volume=-2
+
+<group>
+lovel=1
+hivel=82
+group_label=P
+<region> region_label=01 lokey=29 hikey=30 pitch_keycenter=29 sample=29_F1_P.$EXT
+<region> region_label=02 lokey=31 hikey=34 pitch_keycenter=33 sample=33_A1_P.$EXT tune=-5
+<region> region_label=03 lokey=35 hikey=38 pitch_keycenter=37 sample=37_C#2_P.$EXT
+<region> region_label=04 lokey=39 hikey=42 pitch_keycenter=41 sample=41_F2_P.$EXT tune=-3 offset=157
+<region> region_label=05 lokey=43 hikey=46 pitch_keycenter=45 sample=45_A2_P.$EXT
+<region> region_label=06 lokey=47 hikey=50 pitch_keycenter=49 sample=49_C#3_P.$EXT tune=-2
+<region> region_label=07 lokey=51 hikey=54 pitch_keycenter=52 sample=52_E3_P.$EXT
+<region> region_label=08 lokey=55 hikey=58 pitch_keycenter=57 sample=57_A3_P.$EXT
+<region> region_label=09 lokey=59 hikey=62 pitch_keycenter=61 sample=61_C#4_P.$EXT
+<region> region_label=10 lokey=63 hikey=66 pitch_keycenter=65 sample=65_F4_P.$EXT tune=-3
+<region> region_label=11 lokey=67 hikey=70 pitch_keycenter=69 sample=69_A4_P.$EXT tune=-1
+<region> region_label=12 lokey=71 hikey=74 pitch_keycenter=73 sample=73_C#5_P.$EXT
+<region> region_label=13 lokey=75 hikey=78 pitch_keycenter=77 sample=77_F5_P.$EXT
+<region> region_label=14 lokey=79 hikey=82 pitch_keycenter=81 sample=81_A5_P.$EXT tune=-2
+<region> region_label=15 lokey=83 hikey=86 pitch_keycenter=85 sample=85_C#6_P.$EXT tune=-4
+<region> region_label=16 lokey=87 hikey=88 pitch_keycenter=88 sample=88_E6_P.$EXT
+
+<group>
+lovel=83
+hivel=127
+group_label=FF
+<region> region_label=01 lokey=29 hikey=30 pitch_keycenter=29 sample=29_F1_FF.$EXT offset=101
+<region> region_label=02 lokey=31 hikey=34 pitch_keycenter=33 sample=33_A1_FF.$EXT tune=-5
+<region> region_label=03 lokey=35 hikey=38 pitch_keycenter=37 sample=37_C#2_FF.$EXT
+<region> region_label=04 lokey=39 hikey=42 pitch_keycenter=41 sample=41_F2_FF.$EXT tune=-1
+<region> region_label=05 lokey=43 hikey=46 pitch_keycenter=45 sample=45_A2_FF.$EXT offset=465
+<region> region_label=06 lokey=47 hikey=48 pitch_keycenter=47 sample=47_B2_FF.$EXT offset=408
+<region> region_label=07 lokey=49 hikey=50 pitch_keycenter=49 sample=49_C#3_FF.$EXT
+<region> region_label=08 lokey=51 hikey=54 pitch_keycenter=53 sample=53_F3_FF.$EXT tune=-3
+<region> region_label=09 lokey=55 hikey=58 pitch_keycenter=57 sample=57_A3_FF.$EXT offset=544
+<region> region_label=10 lokey=59 hikey=62 pitch_keycenter=61 sample=61_C#4_FF.$EXT
+<region> region_label=11 lokey=63 hikey=66 pitch_keycenter=65 sample=65_F4_FF.$EXT tune=-3
+<region> region_label=12 lokey=67 hikey=70 pitch_keycenter=69 sample=69_A4_FF.$EXT tune=-1
+<region> region_label=13 lokey=71 hikey=74 pitch_keycenter=73 sample=73_C#5_FF.$EXT
+<region> region_label=14 lokey=75 hikey=78 pitch_keycenter=77 sample=77_F5_FF.$EXT
+<region> region_label=15 lokey=79 hikey=82 pitch_keycenter=81 sample=81_A5_FF.$EXT tune=-2
+<region> region_label=16 lokey=83 hikey=86 pitch_keycenter=85 sample=85_C#6_FF.$EXT tune=-4
+<region> region_label=17 lokey=87 hikey=88 pitch_keycenter=88 sample=88_E6_FF.$EXT
+
+
+//==================================
+<master>
+loop_mode=one_shot
+trigger=release
+rt_decay=6
+group=1
+polyphony=1
+pitch_keytrack=0
+group_label=release
+<region> region_label=01 lokey=29 hikey=30 volume=-11 sample=29_F1_release.$EXT
+<region> region_label=02 lokey=31 hikey=34 volume=-16 sample=33_A1_release.$EXT
+<region> region_label=03 lokey=35 hikey=38 volume=-19 sample=37_C#2_release.$EXT offset=321
+<region> region_label=04 lokey=39 hikey=42 volume=-14 sample=41_F2_release.$EXT
+<region> region_label=05 lokey=43 hikey=46 volume=-18 sample=45_A2_release.$EXT
+<region> region_label=06 lokey=47 hikey=50 volume=-17 sample=49_C#3_release.$EXT
+<region> region_label=07 lokey=51 hikey=54 volume=-11 sample=53_F3_release.$EXT
+<region> region_label=08 lokey=55 hikey=58 volume=-24 sample=57_A3_release.$EXT
+<region> region_label=09 lokey=59 hikey=62 volume=-18 sample=61_C#4_release.$EXT
+<region> region_label=10 lokey=63 hikey=66 volume=-10 sample=65_F4_release.$EXT end=6453
+<region> region_label=11 lokey=67 hikey=70 volume=-18 sample=69_A4_release.$EXT
+<region> region_label=12 lokey=71 hikey=74 volume=-24 sample=73_C#5_release.$EXT
+<region> region_label=13 lokey=75 hikey=78 volume=-16 sample=77_F5_release.$EXT
+<region> region_label=14 lokey=79 hikey=82 volume=-23 sample=81_A5_release.$EXT
+<region> region_label=15 lokey=83 hikey=86 volume=-24 sample=85_C#6_release.$EXT
+<region> region_label=16 lokey=87 hikey=88 volume=-24 sample=88_E6_release.$EXT end=7111
