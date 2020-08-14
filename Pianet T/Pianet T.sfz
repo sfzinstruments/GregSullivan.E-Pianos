@@ -31,6 +31,8 @@ set_hdcc$VELTRACK=1
 <global>
 amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
+note_polyphony=1
+off_time=0.5
 
 
 //==================================
@@ -84,11 +86,8 @@ group_label=FF
 
 //==================================
 <master>
-loop_mode=one_shot
 trigger=release
 rt_decay=6
-group=1
-polyphony=1
 pitch_keytrack=0
 group_label=release
 <region> region_label=01 lokey=29 hikey=30 volume=-11 sample=29_F1_release.$EXT
