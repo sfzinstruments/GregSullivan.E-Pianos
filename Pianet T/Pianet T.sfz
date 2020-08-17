@@ -88,6 +88,7 @@ group_label=FF
 <master>
 trigger=release
 rt_decay=6
+group=1
 pitch_keytrack=0
 group_label=release
 <region> region_label=01 lokey=29 hikey=30 volume=-11 sample=29_F1_release.$EXT
