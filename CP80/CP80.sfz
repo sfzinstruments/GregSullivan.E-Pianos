@@ -20,8 +20,8 @@
 <control>
 default_path=Samples/
 
-label_cc$RELEASE=Release ($RELEASE)
-label_cc$VELTRACK=Veltrack ($VELTRACK)
+label_cc$RELEASE=Release
+label_cc$VELTRACK=Veltrack
 
 set_hdcc$RELEASE=0.05
 set_hdcc$VELTRACK=1
