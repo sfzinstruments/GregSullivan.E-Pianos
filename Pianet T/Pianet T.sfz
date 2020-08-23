@@ -20,15 +20,23 @@
 <control>
 default_path=Samples/
 
+label_cc7=Vol
+label_cc10=Pan
 label_cc$RELEASE=Release
 label_cc$VELTRACK=Veltrack
 
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc$RELEASE=0.05
 set_hdcc$VELTRACK=1
 
 
 //*******************************************************
 <global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
 note_polyphony=1
